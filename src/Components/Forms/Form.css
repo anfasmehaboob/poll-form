@@ -1,0 +1,61 @@
+.imojiContainer a p{
+    visibility: hidden;
+    transform: translateY(0);
+    transition: all 200ms ease-in-out 200ms;
+    color: rgb(67, 67, 175);
+    font-weight: 500;
+}
+.customeHeight{
+    scroll-behavior: smooth;
+}
+.imojiContainer a:hover > p{
+   visibility: visible;
+    transform: translateY(-40px);}
+
+@keyframes labelHover {
+   
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    
+}
+
+.sliderAnimation{
+    animation: slideIn 0.5s ease-in-out;
+}
+
+
+@keyframes slideIn {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+
+
+
+  .text-reveal-left-animation {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .text-reveal-left-animation span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: revealLeftText 0.5s forwards;
+  }
+  
+  @keyframes revealLeftText {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

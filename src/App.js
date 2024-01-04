@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useEffect } from "react";
+import "./App.css";
+import Form from "./Components/Forms/Form";
+import { questions } from "./Questions/Questions";
+import { setQuestions } from "./Store/formSlice";
+import { useDispatch } from "react-redux";
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(setQuestions(questions));
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Form questions={questions} />
     </div>
   );
 }
