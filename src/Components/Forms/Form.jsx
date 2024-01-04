@@ -14,7 +14,7 @@ function Form({ questions }) {
         key={index}
         className=" w-4 h-4 rounded-lg bg-white mb-1 flex justify-center items-center"
       >
-        {answers === index && (
+        {answers.length === index && (
           <div className=" w-2 h-2 bg-slate-800 rounded"></div>
         )}
       </div>
