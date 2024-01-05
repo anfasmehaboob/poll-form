@@ -8,7 +8,7 @@ function Form({ questions }) {
 
   const summary = useSelector((state) => state.form.summary);
 
-  const renderPolls = questions.map((i, index) => {
+  const renderPolls = questions?.map((i, index) => {
     return (
       <div
         key={index}
@@ -21,13 +21,16 @@ function Form({ questions }) {
     );
   });
   return (
-    <div className=" h-screen overflow-hidden customeHeight relative">
+    <div
+      data-testid="Form"
+      className=" h-screen overflow-hidden customeHeight relative"
+    >
       {!summary && (
         <div className=" fixed top-[48%] left-[100px]">{renderPolls}</div>
       )}
 
       {!summary ? (
-        questions.map((i, index) => {
+        questions?.map((i, index) => {
           return (
             <Slide
               id={index}

@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     dispatch(setQuestions(questions));
-  }, []);
+  }, );
 
   return (
     <div className="App">
