@@ -11,7 +11,7 @@ A vertical multi-step poll form for collecting user responses to a series of que
   - [Installation](#installation)
 - [Usage](#usage)
 - [Customization](#customization)
-- [Contributing](#contributing)
+- [Testing](#testing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
@@ -80,7 +80,15 @@ You can customize the poll form by modifying the configuration files, styles, an
 
 - Extend or modify React components in the `src/components` directory for additional features or changes.
 
+## Testing
 
+1. Run tests:
+
+    ```bash
+    npm test
+    ```
+
+2. View test results and coverage.
 
 ## License
 
