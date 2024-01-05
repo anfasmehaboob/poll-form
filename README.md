@@ -90,6 +90,30 @@ You can customize the poll form by modifying the configuration files, styles, an
 
 2. View test results and coverage.
 
+
+## Build
+
+1. **Build the project:**
+
+    ```bash
+    npm run build
+    ```
+
+2. The built project will be available in the `build` directory.
+
+## Serving Locally
+
+If you have not installed `serve` globally, you can do so by running:
+
+```bash
+npm install -g serve
+```
+Then, serve the built project locally:
+
+```bash
+serve -s build
+```
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
