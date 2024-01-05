@@ -37,6 +37,7 @@ function Form({ questions }) {
               key={index}
               title={i?.title}
               options={i?.options}
+              color={i?.bgColor}
             />
           );
         })

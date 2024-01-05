@@ -1,6 +1,7 @@
 export const questions = [
     {
       title: "How was your week  overall ?",
+      bgColor:'bg-sky-600',
       options: [
         {
           label: "Good",
@@ -18,6 +19,7 @@ export const questions = [
     },
     {
       title: "How is JavaScript",
+      bgColor:'bg-green-600',
       options: [
         {
           label: "Awesome",
@@ -35,6 +37,7 @@ export const questions = [
     },
     {
       title: "How was the show",
+      bgColor:'bg-red-600',
       options: [
         {
           label: "Awesome",
