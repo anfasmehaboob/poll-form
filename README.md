@@ -12,6 +12,7 @@ A vertical multi-step poll form for collecting user responses to a series of que
 - [Usage](#usage)
 - [Customization](#customization)
 - [Testing](#testing)
+- [Build](#build)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
